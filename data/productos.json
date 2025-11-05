@@ -1,0 +1,158 @@
+[
+  {
+    "nombre": "Estor digital",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 47.25,
+    "stock": 60,
+    "marca": "Marca A",
+    "categorias": ["690b98f4833cf65c3b10e2fe", "Cortinas"]
+  },
+  {
+    "nombre": "Estor digital",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "Marca A",
+    "categorias": ["690b98f4833cf65c3b10e2fe", "Cortinas"]
+  },
+  {
+    "nombre": "Estor digital",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e2fe",
+    "categorias": ["Estores", "Cortinas"]
+  },
+  {
+    "nombre": "Estor liso Lira",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e2ff",
+    "categorias": ["Estores", "Cortinas"]
+  },
+  {
+    "nombre": "Estor liso Ara",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e2ff",
+    "categorias": ["Estores", "Cortinas"]
+  },
+  {
+    "nombre": "Funda nórdica Hollywood",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e300",
+    "categorias": ["Estores", "Cortinas"]
+  },
+  {
+    "nombre": "Funda sofá Roma",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e301",
+    "categorias": ["Estores", "Cortinas"]
+  },
+  {
+    "nombre": "Funda sofá Napoles",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e301",
+    "categorias": ["Estores", "Cortinas"]
+  },
+  {
+    "nombre": "Funda sofá Azores",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e302",
+    "categorias": ["Estores", "Cortinas"]
+  },
+  {
+    "nombre": "Funda Sofá Malta",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e302",
+    "categorias": ["Estores", "Cortinas"]
+  },
+  {
+    "nombre": "Cojin liso Asia",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e300",
+    "categorias": ["Estores", "Cortinas"]
+  },
+  {
+    "nombre": "Cojin liso Maia",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e300",
+    "categorias": ["Estores", "Cortinas"]
+  },
+  {
+    "nombre": "Cojin estampado Oasis",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e300",
+    "categorias": ["Estores", "Cortinas"]
+  },
+  {
+    "nombre": "Cojin estampado Acordes",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e300",
+    "categorias": ["Estores", "Cortinas"]
+  },
+  {
+    "nombre": "Estor digital HSC97011",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e2fe",
+    "categorias": ["Estores", "Cortinas"]
+  },{
+    "nombre": "Estor digital HSCZ94008",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e2fe",
+    "categorias": ["Estores", "Cortinas"]
+  },{
+    "nombre": "Estor digital HSCC91002",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e2fe",
+    "categorias": ["Estores", "Cortinas"]
+  },{
+    "nombre": "Estor digital HSCP93006",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e2fe",
+    "categorias": ["Estores", "Cortinas"]
+  },{
+    "nombre": "Estor digital HSCJ6868",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e2fe",
+    "categorias": ["Estores", "Cortinas"]
+  },{
+    "nombre": "Estor digital HSCU4144 ",
+    "descripcion": "Estor con estampado personalizado",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e2fe",
+    "categorias": ["Estores", "Cortinas"]
+  }
+
+]

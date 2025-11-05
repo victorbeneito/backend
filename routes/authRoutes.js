@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const { registrar, login } = require('../controllers/authController');
+const { validarUsuarioRegistro } = require('../middlewares/validaciones');
 
-// Rutas públicas para registro y login
-router.post('/registro', registrar);
+// Rutas públicas de autenticación
+router.post('/registro', validarUsuarioRegistro, registrar);
 router.post('/login', login);
 
 module.exports = router;
+

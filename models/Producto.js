@@ -15,6 +15,7 @@ const productoSchema = new mongoose.Schema({
   categorias: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Categoria' }],
   variantes: [varianteSchema],
   imagenes: [String],
+  descripcion: [String],
   destacado: Boolean
 });
 
