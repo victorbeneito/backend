@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 
 const varianteSchema = new mongoose.Schema({
   color: String,
+  imagen: String,
   tamaño: String,
   precio_extra: Number
 });
@@ -12,11 +13,11 @@ const productoSchema = new mongoose.Schema({
   precio: { type: Number, required: true },
   stock: Number,
   marca: { type: mongoose.Schema.Types.ObjectId, ref: 'Marca' },
-  categorias: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Categoria' }],
+  categoria: { type: mongoose.Schema.Types.ObjectId, ref: 'Categoria' },
   variantes: [varianteSchema],
-  imagenes: [String],
-  descripcion: [String],
+  imagenes: { type: [String], default: [] },
   destacado: Boolean
 });
 
 module.exports = mongoose.model('Producto', productoSchema);
+

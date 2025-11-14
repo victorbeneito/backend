@@ -1,158 +1,178 @@
 [
   {
-    "nombre": "Estor digital",
-    "descripcion": "Estor con estampado personalizado",
-    "precio": 47.25,
-    "stock": 60,
-    "marca": "Marca A",
-    "categorias": ["690b98f4833cf65c3b10e2fe", "Cortinas"]
-  },
-  {
-    "nombre": "Estor digital",
-    "descripcion": "Estor con estampado personalizado",
-    "precio": 59.99,
-    "stock": 100,
-    "marca": "Marca A",
-    "categorias": ["690b98f4833cf65c3b10e2fe", "Cortinas"]
-  },
-  {
-    "nombre": "Estor digital",
-    "descripcion": "Estor con estampado personalizado",
+    "nombre": "Estor digital HSCI97004",
+    "descripcion": "Estor con estampado personalizado con un diseño moderno que dará un toque especial a tu habitación",
     "precio": 59.99,
     "stock": 100,
     "marca": "690b98f4833cf65c3b10e2fe",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2f8"],
+    "imagenes":"https://elhogardetusuenos.com/3799-large_default/happystor-hsci97004-estor-enrollable-estampado-digital-infantil-tejido-trasl%C3%BAcido.jpg"
+  },
+  {
+    "nombre": "Estor digital HSCZ4991",
+    "descripcion": "Estor con estampado personalizado con un diseño moderno que dará un toque especial a tu habitación",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e2fe",
+    "categorias": ["690b98f4833cf65c3b10e2f8"],
+    "imagenes":"https://elhogardetusuenos.com/29134-large_default/outlet-estor-enrollable-estampado-digital-trasl%C3%BAcido-zen-4991.jpg"
+  },
+  {
+    "nombre": "Estor digital HSCC20503",
+    "descripcion": "Estor con estampado personalizado con un diseño moderno que dará un toque especial a tu habitación",
+    "precio": 59.99,
+    "stock": 100,
+    "marca": "690b98f4833cf65c3b10e2fe",
+    "categorias": ["690b98f4833cf65c3b10e2f8"],
+    "imagenes":"https://elhogardetusuenos.com/47052-large_default/happystor-hscc20503-estor-enrollable-estampado-digital-cocina-tejido-trasl%C3%BAcido.jpg"
   },
   {
     "nombre": "Estor liso Lira",
-    "descripcion": "Estor con estampado personalizado",
-    "precio": 59.99,
-    "stock": 100,
+    "descripcion": "Estor liso con una gran variedad de colores para combinar con la decoración de tu casa",
+    "precio": 34.25,
+    "stock": 30,
     "marca": "690b98f4833cf65c3b10e2ff",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2f7"],
+    "imagenes":"https://elhogardetusuenos.com/17076-large_default/estor-enrollable-lira-blindecor.jpg"
   },
   {
     "nombre": "Estor liso Ara",
-    "descripcion": "Estor con estampado personalizado",
-    "precio": 59.99,
-    "stock": 100,
+    "descripcion": "Estor liso con una gran variedad de colores para combinar con la decoración de tu casa",
+    "precio": 27.80,
+    "stock": 45,
     "marca": "690b98f4833cf65c3b10e2ff",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2f7"],
+    "imagenes":"https://elhogardetusuenos.com/17266-large_default/estor-enrollable-ara-blindecor.jpg"
   },
   {
-    "nombre": "Funda nórdica Hollywood",
-    "descripcion": "Estor con estampado personalizado",
-    "precio": 59.99,
-    "stock": 100,
+    "nombre": "Funda nórdica Harry",
+    "descripcion": "Sensancional funda nórdica para tu cama con un estampado moderno",
+    "precio": 71.95,
+    "stock": 25,
     "marca": "690b98f4833cf65c3b10e300",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2fb"],
+    "imagenes":"https://elhogardetusuenos.com/32592-large_default/funda-n%C3%B3rdica-harry-estelia.jpg"
   },
   {
-    "nombre": "Funda sofá Roma",
-    "descripcion": "Estor con estampado personalizado",
-    "precio": 59.99,
-    "stock": 100,
+    "nombre": "Funda sofá Tunez",
+    "descripcion": "Protege tu sofá con esta funda que se adapta perfectamente con una amplia gama de colores",
+    "precio": 37.80,
+    "stock": 35,
     "marca": "690b98f4833cf65c3b10e301",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2f9"],
+    "imagenes":"https://elhogardetusuenos.com/4552-large_default/funda-sofa-elastica-tunez-martina-home.jpg"
   },
   {
-    "nombre": "Funda sofá Napoles",
-    "descripcion": "Estor con estampado personalizado",
-    "precio": 59.99,
-    "stock": 100,
+    "nombre": "Funda sofá Malta",
+    "descripcion": "Protege tu sofá con esta funda que se adapta perfectamente con una amplia gama de colores",
+    "precio": 43.70,
+    "stock": 60,
     "marca": "690b98f4833cf65c3b10e301",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2f9"],
+    "imagenes":"https://elhogardetusuenos.com/es/fundas-de-sofa-elasticas/749-65562-funda-sofa-elastica-malta-martina-home.html#/529-tama%C3%B1o-1_plaza/552-color-malta_cardenal_beige"
   },
   {
-    "nombre": "Funda sofá Azores",
-    "descripcion": "Estor con estampado personalizado",
-    "precio": 59.99,
-    "stock": 100,
+    "nombre": "Funda sofá Toronto",
+    "descripcion": "Protege tu sofá con esta funda que se adapta perfectamente con una amplia gama de colores",
+    "precio": 39.20,
+    "stock": 40,
     "marca": "690b98f4833cf65c3b10e302",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2f9"],
+    "imagenes":"https://elhogardetusuenos.com/18494-large_default/funda-sofa-elastica-patternfit-toronto-belmarti.jpg"
   },
   {
-    "nombre": "Funda Sofá Malta",
-    "descripcion": "Estor con estampado personalizado",
-    "precio": 59.99,
-    "stock": 100,
+    "nombre": "Funda Sofá Elegant",
+    "descripcion": "Protege tu sofá con esta funda que se adapta perfectamente con una amplia gama de colores",
+    "precio": 51.30,
+    "stock": 70,
     "marca": "690b98f4833cf65c3b10e302",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2f9"],
+    "imagenes":"https://elhogardetusuenos.com/18501-large_default/funda-sofa-elastica-patternfit-elegant-belmarti.jpg"
   },
   {
-    "nombre": "Cojin liso Asia",
-    "descripcion": "Estor con estampado personalizado",
-    "precio": 59.99,
-    "stock": 100,
+    "nombre": "Cojin liso Porto",
+    "descripcion": "Cojin liso para decorar tu salón o dormitorio",
+    "precio": 12.95,
+    "stock": 15,
     "marca": "690b98f4833cf65c3b10e300",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2fa"],
+    "imagenes":"https://elhogardetusuenos.com/50245-large_default/funda-de-coj%C3%ADn-tejida-porto.jpg"
   },
   {
-    "nombre": "Cojin liso Maia",
-    "descripcion": "Estor con estampado personalizado",
-    "precio": 59.99,
-    "stock": 100,
+    "nombre": "Cojin liso Taver",
+    "descripcion": "Cojin liso para decorar tu salón o dormitorio",
+    "precio": 9.95,
+    "stock": 20,
     "marca": "690b98f4833cf65c3b10e300",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2fa"],
+    "imagenes":"https://elhogardetusuenos.com/50243-large_default/funda-de-coj%C3%ADn-tejida-taver.jpg"
   },
   {
     "nombre": "Cojin estampado Oasis",
-    "descripcion": "Estor con estampado personalizado",
-    "precio": 59.99,
-    "stock": 100,
+    "descripcion": "Cojin estampado para decorar tu salón o dormitorio",
+    "precio": 24.60,
+    "stock": 30,
     "marca": "690b98f4833cf65c3b10e300",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2fa"],
+    "imagenes":"https://elhogardetusuenos.com/33325-large_default/funda-coj%C3%ADn-oasis.jpg"
   },
   {
-    "nombre": "Cojin estampado Acordes",
-    "descripcion": "Estor con estampado personalizado",
-    "precio": 59.99,
-    "stock": 100,
+    "nombre": "Mantel liso Sevilla",
+    "descripcion": "Mantel estampado con protección antimanchas",
+    "precio": 17.45,
+    "stock": 20,
     "marca": "690b98f4833cf65c3b10e300",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2fc"],
+    "imagenes":"https://cdn.shopworld.cloud/media/3/Images/Products/56595_0982_1200_1200.jpg"
   },
   {
     "nombre": "Estor digital HSC97011",
-    "descripcion": "Estor con estampado personalizado",
+    "descripcion": "Estor con estampado personalizado con un diseño moderno que dará un toque especial a tu habitación",
     "precio": 59.99,
     "stock": 100,
     "marca": "690b98f4833cf65c3b10e2fe",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2f8"],
+    "imagenes":"https://elhogardetusuenos.com/4016-large_default/happystor-hsci97011-estor-enrollable-estampado-digital-infantil-tejido-trasl%C3%BAcido.jpg"
   },{
     "nombre": "Estor digital HSCZ94008",
-    "descripcion": "Estor con estampado personalizado",
+    "descripcion": "Estor con estampado personalizado con un diseño moderno que dará un toque especial a tu habitación",
     "precio": 59.99,
     "stock": 100,
     "marca": "690b98f4833cf65c3b10e2fe",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2f8"],
+    "imagenes":"https://elhogardetusuenos.com/28394-large_default/happystor-hscz94008-estor-enrollable-estampado-digital-zen-tejido-trasl%C3%BAcido.jpg"
   },{
     "nombre": "Estor digital HSCC91002",
-    "descripcion": "Estor con estampado personalizado",
+    "descripcion": "Estor con estampado personalizado con un diseño moderno que dará un toque especial a tu habitación",
     "precio": 59.99,
     "stock": 100,
     "marca": "690b98f4833cf65c3b10e2fe",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2f8"],
+    "imagenes":"https://elhogardetusuenos.com/3838-large_default/happystor-hscc91002-estor-enrollable-estampado-digital-cocina-tejido-trasl%C3%BAcido.jpg"
   },{
     "nombre": "Estor digital HSCP93006",
-    "descripcion": "Estor con estampado personalizado",
+    "descripcion": "Estor con estampado personalizado con un diseño moderno que dará un toque especial a tu habitación",
     "precio": 59.99,
     "stock": 100,
     "marca": "690b98f4833cf65c3b10e2fe",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2f8"],
+    "imagenes":"https://elhogardetusuenos.com/23255-large_default/happystor-hscp93006-estor-enrollable-estampado-digital-paisajes-tejido-trasl%C3%BAcido.jpg"
   },{
     "nombre": "Estor digital HSCJ6868",
-    "descripcion": "Estor con estampado personalizado",
+    "descripcion": "Estor con estampado personalizado con un diseño moderno que dará un toque especial a tu habitación",
     "precio": 59.99,
     "stock": 100,
     "marca": "690b98f4833cf65c3b10e2fe",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2f8"],
+    "imagenes":"https://elhogardetusuenos.com/29143-large_default/happystor-hscj6868-estor-enrollable-estampado-digital-juveniles-tejido-trasl%C3%BAcido.jpg"
   },{
     "nombre": "Estor digital HSCU4144 ",
-    "descripcion": "Estor con estampado personalizado",
+    "descripcion": "Estor con estampado personalizado con un diseño moderno que dará un toque especial a tu habitación",
     "precio": 59.99,
     "stock": 100,
     "marca": "690b98f4833cf65c3b10e2fe",
-    "categorias": ["Estores", "Cortinas"]
+    "categorias": ["690b98f4833cf65c3b10e2f8"],
+    "imagenes":"https://elhogardetusuenos.com/33457-large_default/estor-enrollable-happystor-estampado-digital-ciudades-hscu4144.jpg"
   }
 
 ]

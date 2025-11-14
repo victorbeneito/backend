@@ -7,5 +7,7 @@ const { validarUsuarioRegistro } = require('../middlewares/validaciones');
 router.post('/registro', validarUsuarioRegistro, registrar);
 router.post('/login', login);
 
+console.log('authRoutes cargado');
+
 module.exports = router;
 

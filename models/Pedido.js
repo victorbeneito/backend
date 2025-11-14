@@ -4,7 +4,8 @@ const pedidoProductoSchema = new mongoose.Schema({
   producto_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Producto' },
   nombre: String,
   cantidad: Number,
-  precio_unitario: Number
+  precio_unitario: Number,
+  total: Number
 });
 
 const pedidoSchema = new mongoose.Schema({
