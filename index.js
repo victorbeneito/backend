@@ -17,10 +17,6 @@ const autenticarToken = require('./middlewares/authMiddleware');
 
 app.use(express.json());
 app.use(cors());
-app.use((req, res, next) => {
-  console.log(`Método: ${req.method}, URL: ${req.url}, Body:`, req.body);
-  next();
-});
 
 // Requiere modelos para inicializar esquemas (opcional)
 require('./models/Marca');
@@ -57,44 +53,6 @@ app.get('/', (req, res) => {
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('Conectado a MongoDB'))
   .catch(err => console.error('Error de conexión a MongoDB:', err));
-
-// Mostrar todas las rutas registradas para debugging
-if (app._router) {
-  app._router.stack.forEach((middleware) => {
-    if (middleware.route) {
-      // Rutas registradas directamente en app
-      console.log('Ruta:', middleware.route.path);
-    } else if (middleware.name === 'router') {
-      // Rutas registradas en routers
-      middleware.handle.stack.forEach((handler) => {
-        if (handler.route) {
-          console.log('Ruta:', handler.route.path);
-        }
-      });
-    }
-  });
-} else {
-  console.log('No hay rutas registradas aún.');
-}
-
-console.log('app._router:', app._router);
-// Mostrar todas las rutas registradas para debugging
-if (app._router) {
-  console.log('RUTAS REGISTRADAS:');
-  app._router.stack.forEach((middleware) => {
-    if (middleware.route) {
-      console.log(`-> ${Object.keys(middleware.route.methods).join(', ')} ${middleware.route.path}`);
-    } else if (middleware.name === 'router') {
-      middleware.handle.stack.forEach((handler) => {
-        if (handler.route) {
-          console.log(`-> ${Object.keys(handler.route.methods).join(', ')} ${handler.route.path}`);
-        }
-      });
-    }
-  });
-} else {
-  console.log('No hay rutas registradas aún.');
-}
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

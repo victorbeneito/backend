@@ -4,11 +4,13 @@ const Categoria = require('../models/Categoria');
 const authMiddleware = require('../middlewares/authMiddleware');
 
 // Obtener todas las categorías
-router.get('/', authMiddleware, async (req, res) => {
+// router.get('/', authMiddleware, async (req, res) => {
+  router.get('/', async (req, res) => {
   try {
-    const categorias = await Categoria.find();
-    res.json({ categorias });
+    const categorias = await Categoria.find().sort({ nombre: 1 });
+    res.json(categorias); // devolver directamente el array
   } catch (error) {
+    console.error('Error al obtener categorías:', error);
     res.status(500).json({ error: 'Error al obtener categorías' });
   }
 });
@@ -16,10 +18,12 @@ router.get('/', authMiddleware, async (req, res) => {
 // Crear categoría
 router.post('/', authMiddleware, async (req, res) => {
   try {
-    const categoria = new Categoria({ nombre: req.body.nombre });
-    await categoria.save();
-    res.status(201).json({ categoria });
+    const { nombre } = req.body;
+    const nuevaCategoria = new Categoria({ nombre });
+    await nuevaCategoria.save();
+    res.status(201).json(nuevaCategoria); // devolver el objeto directamente
   } catch (error) {
+    console.error('Error al crear categoría:', error);
     res.status(500).json({ error: 'Error al crear categoría' });
   }
 });
@@ -27,13 +31,20 @@ router.post('/', authMiddleware, async (req, res) => {
 // Actualizar categoría
 router.put('/:id', authMiddleware, async (req, res) => {
   try {
-    const categoria = await Categoria.findByIdAndUpdate(
+    const { nombre } = req.body;
+    const categoriaActualizada = await Categoria.findByIdAndUpdate(
       req.params.id,
-      { nombre: req.body.nombre },
+      { nombre },
       { new: true }
     );
-    res.json({ categoria });
+
+    if (!categoriaActualizada) {
+      return res.status(404).json({ error: 'Categoría no encontrada' });
+    }
+
+    res.json(categoriaActualizada);
   } catch (error) {
+    console.error('Error al actualizar categoría:', error);
     res.status(500).json({ error: 'Error al actualizar categoría' });
   }
 });
@@ -41,9 +52,14 @@ router.put('/:id', authMiddleware, async (req, res) => {
 // Eliminar categoría
 router.delete('/:id', authMiddleware, async (req, res) => {
   try {
-    await Categoria.findByIdAndDelete(req.params.id);
-    res.json({ ok: true });
+    const categoriaEliminada = await Categoria.findByIdAndDelete(req.params.id);
+    if (!categoriaEliminada) {
+      return res.status(404).json({ error: 'Categoría no encontrada' });
+    }
+
+    res.json({ mensaje: 'Categoría eliminada correctamente' });
   } catch (error) {
+    console.error('Error al eliminar categoría:', error);
     res.status(500).json({ error: 'Error al eliminar categoría' });
   }
 });

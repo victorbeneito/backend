@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const Producto = require('../models/Producto');
 
 const { crearProducto, listarProductos, obtenerProducto, actualizarProducto, eliminarProducto } = require('../controllers/productosController');
 const { validarProducto } = require('../middlewares/validaciones');

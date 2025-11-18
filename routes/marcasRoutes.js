@@ -4,11 +4,13 @@ const Marca = require('../models/Marca');
 const authMiddleware = require('../middlewares/authMiddleware');
 
 // Obtener todas las marcas
-router.get('/', authMiddleware, async (req, res) => {
+// router.get('/', authMiddleware, async (req, res) => {
+  router.get('/', async (req, res) => {
   try {
-    const marcas = await Marca.find();
-    res.json({ marcas });
+    const marcas = await Marca.find().sort({ nombre: 1 });
+    res.json(marcas); // devolver array directamente
   } catch (error) {
+    console.error('Error al obtener marcas:', error);
     res.status(500).json({ error: 'Error al obtener marcas' });
   }
 });
@@ -16,10 +18,12 @@ router.get('/', authMiddleware, async (req, res) => {
 // Crear marca
 router.post('/', authMiddleware, async (req, res) => {
   try {
-    const marca = new Marca({ nombre: req.body.nombre });
-    await marca.save();
-    res.status(201).json({ marca });
+    const { nombre } = req.body;
+    const nuevaMarca = new Marca({ nombre });
+    await nuevaMarca.save();
+    res.status(201).json(nuevaMarca); // devolver el objeto directamente
   } catch (error) {
+    console.error('Error al crear marca:', error);
     res.status(500).json({ error: 'Error al crear marca' });
   }
 });
@@ -27,13 +31,20 @@ router.post('/', authMiddleware, async (req, res) => {
 // Actualizar marca
 router.put('/:id', authMiddleware, async (req, res) => {
   try {
-    const marca = await Marca.findByIdAndUpdate(
+    const { nombre } = req.body;
+    const marcaActualizada = await Marca.findByIdAndUpdate(
       req.params.id,
-      { nombre: req.body.nombre },
+      { nombre },
       { new: true }
     );
-    res.json({ marca });
+
+    if (!marcaActualizada) {
+      return res.status(404).json({ error: 'Marca no encontrada' });
+    }
+
+    res.json(marcaActualizada);
   } catch (error) {
+    console.error('Error al actualizar marca:', error);
     res.status(500).json({ error: 'Error al actualizar marca' });
   }
 });
@@ -41,11 +52,17 @@ router.put('/:id', authMiddleware, async (req, res) => {
 // Eliminar marca
 router.delete('/:id', authMiddleware, async (req, res) => {
   try {
-    await Marca.findByIdAndDelete(req.params.id);
-    res.json({ ok: true });
+    const marcaEliminada = await Marca.findByIdAndDelete(req.params.id);
+    if (!marcaEliminada) {
+      return res.status(404).json({ error: 'Marca no encontrada' });
+    }
+
+    res.json({ mensaje: 'Marca eliminada correctamente' });
   } catch (error) {
+    console.error('Error al eliminar marca:', error);
     res.status(500).json({ error: 'Error al eliminar marca' });
   }
 });
 
 module.exports = router;
+
