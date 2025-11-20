@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Marca = require('../models/Marca');
 const authMiddleware = require('../middlewares/authMiddleware');
+const mongoose = require('mongoose');
 
 // Obtener todas las marcas
 // router.get('/', authMiddleware, async (req, res) => {

@@ -13,12 +13,10 @@ const categoriasRoutes = require('./routes/categoriasRoutes');
 const marcasRoutes = require('./routes/marcasRoutes');
 const autenticarToken = require('./middlewares/authMiddleware');
 
-
-
 app.use(express.json());
 app.use(cors());
 
-// Requiere modelos para inicializar esquemas (opcional)
+// Opcional: inicializar esquemas (generalmente no obligatorio, Mongoose lo hace al import)
 require('./models/Marca');
 require('./models/Producto');
 require('./models/Categoria');
@@ -26,18 +24,20 @@ require('./models/Pedido');
 require('./models/Cliente');
 require('./models/Usuario');
 
-// Rutas públicas (registro y login)
+// Rutas de autenticación públicas
 app.use('/auth', authRoutes);
 
-// Sirve archivos estáticos de uploads
+// Archivos estáticos uploads
 app.use('/uploads', express.static('uploads'));
 
-// Rutas sin autenticación para productos públicos
+// Rutas públicas para productos
 app.use('/productos', productosRoutes);
 
-// Rutas protegidas con JWT
+// Rutas protegidas con autenticarToken middleware
 app.use('/pedidos', autenticarToken, pedidosRoutes);
 app.use('/clientes', autenticarToken, clientesRoutes);
+
+// Categorias y marcas (puedes añadir autenticación si quieres)
 app.use('/categorias', categoriasRoutes);
 app.use('/marcas', marcasRoutes);
 
@@ -49,11 +49,12 @@ app.get('/', (req, res) => {
   res.send('API backend funcionando correctamente');
 });
 
-// Conexión a MongoDB
+// Conectar a MongoDB
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('Conectado a MongoDB'))
   .catch(err => console.error('Error de conexión a MongoDB:', err));
 
+// Iniciar servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en puerto ${PORT}`);

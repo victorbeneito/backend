@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Categoria = require('../models/Categoria');
 const authMiddleware = require('../middlewares/authMiddleware');
+const mongoose = require('mongoose');
 
 // Obtener todas las categorías
 // router.get('/', authMiddleware, async (req, res) => {

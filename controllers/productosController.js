@@ -1,43 +1,27 @@
 const Producto = require('../models/Producto'); // Ajusta ruta según tu estructura
 
-// async function listarProductos(req, res) {
-//   try {
-//     const productos = await Producto.find()
-//       .populate('marca', 'nombre descripcion logo_url')
-//       .populate('categoria', 'nombre');
-//     res.json({ ok: true, productos });
-//   } catch (error) {
-//     console.error('Error al obtener productos:', error);
-//     res.status(500).json({ ok: false, error: 'Error interno al obtener productos' });
-//   }
-// }
-
 async function listarProductos(req, res) {
   try {
-    const q = req.query.q || ""; // Parámetro búsqueda
-        let productos;
-
+    const q = req.query.q || "";
+    let productos;
     if (q.trim() === "") {
-      // Si no hay texto en búsqueda, devuelve todos los productos
-            productos = await Producto.find()
+      productos = await Producto.find()
         .populate('marca', 'nombre descripcion logo_url')
         .populate('categoria', 'nombre');
     } else {
-      // Escapar caracteres especiales para evitar mal funcionamiento en regex
-      const escapedQuery = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      // Busca productos cuyo nombre contenga el texto (regex insensible a mayúsculas)
-            const regex = new RegExp(escapedQuery, "i");
-            productos = await Producto.find({ nombre: regex })
+      // Busca sin escapar caracteres, solo insensible a mayúsculas/minúsculas
+      const regex = new RegExp(q, 'i');
+      productos = await Producto.find({ nombre: regex })
         .populate('marca', 'nombre descripcion logo_url')
         .populate('categoria', 'nombre');
     }
     res.json({ ok: true, productos });
-
   } catch (error) {
     console.error('Error al obtener productos:', error);
     res.status(500).json({ ok: false, error: 'Error interno al obtener productos' });
   }
 }
+
 
 
 async function obtenerProducto(req, res) {
