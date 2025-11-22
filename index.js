@@ -16,7 +16,7 @@ const autenticarToken = require('./middlewares/authMiddleware');
 app.use(express.json());
 app.use(cors());
 
-// Opcional: inicializar esquemas (generalmente no obligatorio, Mongoose lo hace al import)
+// Opcional: inicialitzar esquemes 
 require('./models/Marca');
 require('./models/Producto');
 require('./models/Categoria');
@@ -24,30 +24,29 @@ require('./models/Pedido');
 require('./models/Cliente');
 require('./models/Usuario');
 
-// Rutas de autenticación públicas
+// Rutes de autenticació públiques
 app.use('/auth', authRoutes);
 
-// Archivos estáticos uploads
+// Arxius estátics uploads
 app.use('/uploads', express.static('uploads'));
 
-// Rutas públicas para productos
+// Rutes públiques per a productos
 app.use('/productos', productosRoutes);
 
-// Rutas protegidas con autenticarToken middleware
+// Rutas protegides amb autenticarToken middleware
 app.use('/pedidos', autenticarToken, pedidosRoutes);
 app.use('/clientes', autenticarToken, clientesRoutes);
 
-// Categorias y marcas (puedes añadir autenticación si quieres)
+// Categories i marques 
 app.use('/categorias', categoriasRoutes);
 app.use('/marcas', marcasRoutes);
 
-// Rutas para subir archivos
+// Rutas para pujar arxius
 app.use('/api', uploadRoutes);
 
-// Ruta raíz simple
+// Ruta arrel simple
 app.get('/', (req, res) => {
-  res.send('API backend funcionando correctamente');
-});
+  res.send('API backend funcionando correctamente'); });
 
 // Conectar a MongoDB
 mongoose.connect(process.env.MONGO_URI)
