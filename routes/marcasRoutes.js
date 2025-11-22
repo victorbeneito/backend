@@ -5,7 +5,6 @@ const authMiddleware = require('../middlewares/authMiddleware');
 const mongoose = require('mongoose');
 
 // Obtener todas las marcas
-// router.get('/', authMiddleware, async (req, res) => {
   router.get('/', async (req, res) => {
   try {
     const marcas = await Marca.find().sort({ nombre: 1 });
